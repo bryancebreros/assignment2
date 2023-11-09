@@ -44,11 +44,9 @@
       <div class="form-step form-step-active">
         <div class="input-group">
           <label for="username"><?php echo $questions[0]['question'] ?></label>
-          <?php 
-            foreach ($questions[0]['answers'] as $answer) {
-              echo "<p onClick='handleClick(`$answer`,1)' class='btn btn--choice'>$answer</p><br>";
-          }
-          ?>
+          <?php foreach ($questions[0]['answers'] as $answer): ?>
+            <p onClick="handleClick('<?= $answer ?>',1)" class="btn btn--choice"><?= $answer ?></p><br>
+          <?php endforeach; ?>
         </div>
         
         <div class="">
@@ -60,11 +58,9 @@
       <div class="form-step">
         <div class="input-group">
           <label for="username"><?php echo $questions[1]['question'] ?></label>
-          <?php 
-            foreach ($questions[1]['answers'] as $answer) {
-              echo "<p onClick='handleClick(`$answer`,2)' class='btn btn--choice'>$answer</p><br>";
-          }
-          ?>
+          <?php foreach ($questions[1]['answers'] as $answer): ?>
+            <p onClick="handleClick('<?= $answer ?>',2)" class="btn btn--choice"><?= $answer ?></p><br>
+          <?php endforeach; ?>
         </div>
         
         <div class="btns-group">
@@ -77,11 +73,9 @@
       <div class="form-step">
         <div class="input-group">
         <label for="username"><?php echo $questions[2]['question'] ?></label>  
-        <?php 
-            foreach ($questions[2]['answers'] as $answer) {
-              echo "<p onClick='handleClick(`$answer`, 3)' class='btn btn--choice'>$answer</p><br>";
-          }
-          ?>
+        <?php foreach ($questions[2]['answers'] as $answer): ?>
+          <p onClick="handleClick('<?= $answer ?>',3)" class="btn btn--choice"><?= $answer ?></p><br>
+        <?php endforeach; ?>
         </div>
         <div class="btns-group">
           <a href="#" class="btn btn-prev">Previous</a>
