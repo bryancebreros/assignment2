@@ -162,11 +162,12 @@ input {
 
 .info {
   background-color: rgb(37, 36, 36);
-  color: #fff;
+  color: #faf2f2;
   position: absolute;
   top: 0;
   left: 0;
   padding: .4rem;
   width: 15rem;
+  height: 150rem;
 
 }
